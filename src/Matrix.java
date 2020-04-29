@@ -37,7 +37,7 @@ public class Matrix {
     public static String toString(Object[][] matrix) {
         StringBuilder stringBuilder = new StringBuilder();
         for (Object[] row : matrix) {
-            stringBuilder.append(Arrays.toString(row) + "\n");
+            stringBuilder.append(Arrays.toString(row)).append("\n");
         }
         return stringBuilder.toString();
     }
