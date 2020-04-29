@@ -1,15 +1,15 @@
-import java.util.Arrays;
-
+/**
+ * Main class for starting an app
+ * @author Andrii Kotliar
+ */
 public class Main {
 
     public static void main(String[] args) {
-        int [][] matrix = new int[3][3];
-        int x=0;
-
-        for(int[] row:matrix)
-            Arrays.fill(row,x);
-
-        for(int[] row:matrix)
-            System.out.println(Arrays.toString(row));
+        Integer[][] matrix = { {0, 2, 3}, {2, 5, 5}, {6, 3, 3} };
+        System.out.println("Before:");
+        System.out.println(Matrix.toString(matrix));
+        
+        System.out.println("After:");
+        System.out.println(Matrix.toString(Matrix.sort(matrix)));
     }
 }
