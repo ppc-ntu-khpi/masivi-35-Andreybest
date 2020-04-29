@@ -1,3 +1,7 @@
+/**
+ * Main class for starting an app
+ * @author Andrii Kotliar
+ */
 public class Main {
 
     public static void main(String[] args) {
